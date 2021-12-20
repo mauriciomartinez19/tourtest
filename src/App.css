@@ -60,7 +60,7 @@
   padding: 5px;
   margin: 0;
   font-size: 18px;
-  color: rgb(0, 81, 255);
+  color: rgb(39, 78, 161);
 }
 
 .box p {
@@ -79,12 +79,16 @@
   width: 30%;
   padding: 3px;
   background-color:rgb(253, 252, 249);
-  color: rgb(240, 58, 58);
+  color: rgb(197, 48, 48);
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   border-color: rgb(240, 58, 58);
-  border-width: 2px;
+  border-width: 1px;
   border-radius: 5px;
+}
+.btn:hover{
+  transform: scale(0.95);
+  cursor: pointer;
 }
 
 .text-btn{
@@ -94,4 +98,39 @@
   color: rgb(103, 171, 216);
   padding: 0px;
   font-size: 16px;
+}
+
+.text-btn:hover{
+  color: rgb(172, 164, 209);
+  cursor: pointer;
+}
+
+.refresh-div {
+ display: flex;
+ justify-content: center; 
+}
+
+.refresh-btn{
+  background-color: rgb(80, 150, 230);
+  border-width: 2px;
+  border-color: #768afc;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  box-shadow: rgb(231, 231, 235) 5px 5px 50px;
+}
+
+.refresh-btn:hover{
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.loading{
+  display: flex;
+  justify-content: center;
+  color: rgb(39, 78, 161);
+  font-size: 50px;
+  font-weight: 500;
 }
