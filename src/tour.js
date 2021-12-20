@@ -19,12 +19,18 @@ const Tour = () =>{
             return(      
                 <article key={id} className="box">
                     <img className='picture' src={img}/>
+                    <div className='text-section'>
                     <div className="title-price">
                             <h5>{title}</h5>
                             <h6>{price}</h6>
                     </div>
-                    <p>{paragraph}</p>
-                    <button>Not Interested</button>
+                    <p>
+                        {paragraph}
+                        <br></br>
+                        <button className='text-btn'>Show Less</button>
+                    </p>
+                    </div>
+                    <button className='btn'>Not Interested</button>
                 </article>
             )
         })
