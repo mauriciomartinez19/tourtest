@@ -16,16 +16,15 @@ const Tour = () =>{
     <div className = "tours-box">{
         tours.map((tour) => {
             const{id, img, title, paragraph, price } = tour
-            return(       
+            return(      
                 <article key={id} className="box">
                     <img className='picture' src={img}/>
-                    <div>
-                        <header>
+                    <div className="title-price">
                             <h5>{title}</h5>
                             <h6>{price}</h6>
-                        </header>
                     </div>
                     <p>{paragraph}</p>
+                    <button>Not Interested</button>
                 </article>
             )
         })
